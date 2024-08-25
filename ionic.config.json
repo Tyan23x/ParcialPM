@@ -1,0 +1,7 @@
+{
+  "name": "E_comercial",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
