@@ -23,6 +23,7 @@
       <div class="category">{{contentProducts.category}}</div>
       <div class="heading">{{contentProducts.title}}</div>
       <div class="description">{{contentProducts.description}}</div>
+      <div class="price">{{contentProducts.price | currency}}</div>
       <ion-button class="btn-add" (click)="addCart()" (click)="addNotification()" >
         Add to cart
       </ion-button>
