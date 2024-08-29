@@ -1,0 +1,60 @@
+.card {
+    margin: 10px auto;
+    width: 90vw;
+    height: 90vh;
+    background: white;
+    padding: .4em;
+    border-radius: 6px;
+  }
+  
+  .card-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: rgb(236, 236, 236);
+    max-width: 70vw;
+    max-height: 75vh;
+    border-radius: 6px 6px 0 0;
+  }
+  
+  .card-image:hover {
+    transform: scale(0.98);
+  }
+  
+  .category {
+    text-transform: uppercase;
+    font-size: medium;
+    font-weight: 600;
+    color: rgb(63, 121, 230);
+    padding: 10px 7px 0;
+
+  }
+  
+  .heading {
+    font-weight: 600;
+    color: rgb(88, 87, 87);
+    padding: 7px;
+    text-align: justify;
+    font-size: large;
+  }
+  
+  .description {
+    color: #0c0c0c;
+    font-weight: 400;
+    font-size: small;
+    padding-top: 20px;
+    padding: 7px;
+  }
+  
+  .name {
+    font-weight: 600;
+  }
+  
+  .name:hover {
+    cursor: pointer;
+  }
+
+  .btn-add {
+    color: white;    
+  }

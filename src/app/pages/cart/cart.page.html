@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="backTo()">
+        <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Cart</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item *ngFor="let item of contentCart">
+      <ion-thumbnail slot="start">
+        <ion-img [src]="item.image"></ion-img>
+      </ion-thumbnail>
+      <ion-label>
+        <h2>{{ item.title }}</h2>
+        <p>{{ item.price | currency }}</p>
+      </ion-label>
+      <ion-button fill="clear" color="danger" (click)="removeFromCart(item)">
+        <ion-icon slot="icon-only" name="trash-outline" ></ion-icon>
+      </ion-button>
+    </ion-item>
+  </ion-list>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-button (click)="clearCart()" >
+          <ion-icon slot="start" name="trash-bin-outline"></ion-icon>
+          Clear cart
+        </ion-button>
+      </ion-buttons>
+      <ion-buttons slot="start">
+        <ion-button (click)="buyNotification()" (click)="clearCart()" >
+          <ion-icon slot="start" name="card-outline" ></ion-icon>
+          Buy
+        </ion-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

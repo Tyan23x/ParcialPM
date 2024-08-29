@@ -1,0 +1,13 @@
+<ion-card>
+  <div class="card">
+    <div class="card-border-top">
+    </div>
+    <div class="img">
+      <ion-img [src]="image"></ion-img>
+    </div>
+    <span>{{ title }}</span>
+    <p class="job">{{ description }}</p>
+    <p class="job"> {{ price | currency : "USD" }} </p>
+    <button (click)="Click(id)"> See details</button>
+  </div>
+</ion-card>
